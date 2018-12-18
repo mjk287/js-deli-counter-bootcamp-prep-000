@@ -1,12 +1,12 @@
+function takeANumber(lineOfPeople, name){
+  var newLineOfPeople = [...lineOfPeople, name]
+  return `Welcome, ${name}. You are number ${newLineOfPeople.length} in line.`
+}
+
 // function takeANumber(lineOfPeople, name){
-//   lineOfPeople = [...lineOfPeople, name]
+//   lineOfPeople.push(name)
 //   return `Welcome, ${name}. You are number ${lineOfPeople.length} in line.`
 // }
-
-function takeANumber(lineOfPeople, name){
-  lineOfPeople.push(name)
-  return `Welcome, ${name}. You are number ${lineOfPeople.length} in line.`
-}
 
 function nowServing(lineOfPeople){
   if (lineOfPeople.length > 0){
